@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/nav_heart_rate"
+        android:title="Heart Rate"
+        android:icon="@drawable/ic_ekg"/>
+
+    <item
+        android:id="@+id/nav_imu"
+        android:title="IMU"
+        android:icon="@drawable/ic_notch_clipart"/>
+
+    <item
+        android:id="@+id/nav_blood_pressure"
+        android:title="Blood Pressure"
+        android:icon="@drawable/ic_bp_clipart"/>
+</menu>

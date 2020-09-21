@@ -1,0 +1,106 @@
+apply plugin: 'com.android.application'
+
+project.ext.modelAssetsDir = new File((File) project.buildDir, '../src/main/assets')
+
+android {
+    compileSdkVersion 29
+    buildToolsVersion "29.0.2"
+
+    defaultConfig {
+        applicationId "com.example.bluetoothtesting"
+        minSdkVersion 23
+        targetSdkVersion 29
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    packagingOptions {
+        exclude 'LICENSE.txt'
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+        exclude 'META-INF/DEPENDENCIES'
+    }
+
+    lintOptions {
+        abortOnError false
+    }
+}
+
+configurations {
+    appConfig
+}
+
+repositories {
+    mavenCentral()
+    flatDir {
+        dirs 'libs'
+    }
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.1'
+    testImplementation 'junit:junit:4.13'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+
+    implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.0.0'
+
+    // For CaretakerDevice
+    implementation 'com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37@aar'
+    implementation 'org.jetbrains:annotations-java5:15.0'
+
+    //    Dependencies for Notch App
+    implementation 'com.notch.sdk:sdk-android:1.1.355'
+    appConfig 'com.notch.sdk:sdk-android:1.1.355'
+}
+
+task convertObj(type: JavaExec) {
+    ext.srcFile1 = file('../model/equipment_tutorial.obj')
+    ext.srcFile2 = file('../model/equipment_tutorial.js')
+    inputs.files files(srcFile1,srcFile2)
+    outputs.dir project.modelAssetsDir
+
+    main = 'com.wearnotch.visualiserutil.ObjConverter'
+    classpath = configurations.appConfig
+    args = [ srcFile1.getAbsolutePath(), srcFile2.getAbsolutePath(),
+             new File((File) project.modelAssetsDir, 'equipment.dat').getAbsolutePath() ]
+}
+
+task convertMtl(type: JavaExec) {
+    ext.srcFile = file('../model/equipment_tutorial.mtl')
+    inputs.file srcFile
+    outputs.dir project.modelAssetsDir
+
+    main = 'com.wearnotch.visualiserutil.MtlConverter'
+    classpath = configurations.appConfig
+    args = [ srcFile.getAbsolutePath(),
+             new File((File) project.modelAssetsDir, 'equipment_mtl.dat').getAbsolutePath() ]
+}
+
+project.afterEvaluate {
+    project.tasks.findAll {
+        it.name.startsWith('generate') && it.name.endsWith('Assets')
+    }.each {
+        it.dependsOn convertObj
+        it.dependsOn convertMtl
+    }
+}

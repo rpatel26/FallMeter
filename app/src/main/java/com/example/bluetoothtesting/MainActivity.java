@@ -11,6 +11,7 @@ import androidx.fragment.app.FragmentManager;
 
 import android.Manifest;
 import android.app.Activity;
+import android.app.AlertDialog;
 import android.bluetooth.BluetoothAdapter;
 import android.bluetooth.BluetoothDevice;
 import android.bluetooth.BluetoothGatt;
@@ -26,6 +27,7 @@ import android.bluetooth.le.ScanResult;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
@@ -43,6 +45,7 @@ import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.CompoundButton;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
@@ -50,11 +53,15 @@ import com.squareup.okhttp.internal.Util;
 import com.wearnotch.db.NotchDataBase;
 import com.wearnotch.db.model.Device;
 import com.wearnotch.framework.ActionDevice;
+import com.wearnotch.framework.ColorPair;
 import com.wearnotch.framework.Measurement;
+import com.wearnotch.framework.MeasurementType;
 import com.wearnotch.framework.NotchChannel;
 import com.wearnotch.framework.NotchNetwork;
+import com.wearnotch.framework.Skeleton;
 import com.wearnotch.framework.Workout;
 import com.wearnotch.internal.util.EmptyCancellable;
+import com.wearnotch.internal.util.IOUtil;
 import com.wearnotch.service.NotchAndroidService;
 import com.wearnotch.service.common.NotchCallback;
 import com.wearnotch.service.common.NotchError;
@@ -65,10 +72,13 @@ import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 import java.util.UUID;
 
 import javax.annotation.Nonnull;
@@ -102,6 +112,8 @@ public class MainActivity extends AppCompatActivity {
     private BloodPressureFragment bloodPressureFragment;
     private Fragment activeFragment;
     BottomNavigationView bottomNavigationView;
+    private AlertDialog.Builder mAlertDialogBuilder;
+    private AlertDialog mAlertDialog;
 
     // Data
     private boolean isHeartyPatchConnected;
@@ -127,6 +139,7 @@ public class MainActivity extends AppCompatActivity {
     private NotchChannel mNotchChannel;
     private Workout mNotchWorkout;
     private NotchChannel mSelectedNotchChannel;
+    private ImageView dockImage;
     private AnimationDrawable mDockAnimation;
 
 
@@ -156,6 +169,12 @@ public class MainActivity extends AppCompatActivity {
         canRecordData = false;
         numBloodPressurePts = 0;
 
+        dockImage = findViewById(R.id.dock_image);
+        dockImage.setBackgroundResource(R.drawable.sensor_anim);
+        mDockAnimation = (AnimationDrawable) dockImage.getBackground();
+        dockImage.setVisibility(View.GONE);
+
+        mAlertDialogBuilder = new AlertDialog.Builder(this);
         fragmentManager = getSupportFragmentManager();
         heartRateFragment = new HeartRateFragment();
         imuFragment = new IMUFragment();
@@ -164,7 +183,7 @@ public class MainActivity extends AppCompatActivity {
 
         bottomNavigationView = findViewById(R.id.bottom_navigation);
         bottomNavigationView.setOnNavigationItemSelectedListener(navListener);
-        getSupportFragmentManager().beginTransaction().replace(R.id.fragment_container,
+        getSupportFragmentManager().beginTransaction().add(R.id.fragment_container,
                 activeFragment).commit();
 
         mBluetoothAdapter = ((BluetoothManager) getSystemService(BLUETOOTH_SERVICE)).getAdapter();
@@ -202,7 +221,7 @@ public class MainActivity extends AppCompatActivity {
 
         // Init Vars for Notch Devices
         notchService = new CustomNotchService();
-        mNotchChannel = NotchChannel.fromChar('A');
+//        mNotchChannel = NotchChannel.fromChar('A');
 
         // Intent to start Notch Service
         Intent controlServiceIntent = new Intent(this, NotchAndroidService.class);
@@ -227,8 +246,6 @@ public class MainActivity extends AppCompatActivity {
             }
         }, 1000L);
     }
-
-
 
     @Override
     protected void onResume() {
@@ -274,9 +291,19 @@ public class MainActivity extends AppCompatActivity {
         fragmentManager.beginTransaction()
                 .replace(R.id.fragment_container, selectedFragment)
                 .commit();
+
         activeFragment = selectedFragment;
     }
 
+    private void showAlertDialog(String title, String message){
+        mAlertDialogBuilder.setMessage(message);
+        mAlertDialogBuilder.setTitle(title);
+        mAlertDialog = mAlertDialogBuilder.create();
+        mAlertDialog.show();
+    }
+    private void dismissAlertDialog(){
+        mAlertDialog.dismiss();
+    }
     private void enableBLE(){
         Intent btEnableIntent = new Intent(mBluetoothAdapter.ACTION_REQUEST_ENABLE);
         startActivity(btEnableIntent);
@@ -915,7 +942,22 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+
+    private char getChannel(final String user){
+        if (mNotchDB == null) mNotchDB = NotchDataBase.getInst();
+        Set<Character> channels = new HashSet<>();
+        for (Device device : mNotchDB.findAllDevices(user)) {
+            channels.add(device.getChannel().toChar());
+        }
+
+        if(channels.size() == 0){
+            return '1';
+        }
+        return (char) channels.toArray()[0];
+    }
+
     public void pairNewNotchDevice(View v){
+        showAlertDialog("Pairing Notch....", "Please wait");
         Toast.makeText(mActivity, "Pairing Device......", Toast.LENGTH_LONG).show();
         mNotchService.pair(new EmptyNotchCallback<Device>(){
             @Override
@@ -923,41 +965,54 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "NotchPair: Success!!");
                 updateDeviceList(mNotchService.getLicense());
                 Toast.makeText(mActivity, "Pairing Success!", Toast.LENGTH_LONG).show();
+                dismissAlertDialog();
             }
 
             @Override
             public void onFailure(@Nonnull NotchError notchError) {
                 Log.d(TAG, "NotchPair: Failed: " + notchError.getStatus());
                 Toast.makeText(mActivity, "Failed to Pair Notch:\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                dismissAlertDialog();
             }
         });
     }
     public void syncNotchPairing(View v){
+        showAlertDialog("Syncing Notch....", "Please wait");
         mNotchService.syncPairedDevices(new EmptyNotchCallback<Void>(){
             @Override
             public void onSuccess(@Nullable Void aVoid) {
                 Log.d(TAG, "NotchSyncPairing: Success!!");
                 updateDeviceList(mNotchService.getLicense());
                 Toast.makeText(mActivity, "Sync Pairing Success", Toast.LENGTH_LONG);
+                dismissAlertDialog();
             }
 
             @Override
             public void onFailure(@Nonnull NotchError notchError) {
                 Log.d(TAG, "NotchSyncPairing: Failure");
                 Toast.makeText(mActivity, "Failed of Sync Pairing:\n" + notchError.getStatus(), Toast.LENGTH_LONG);
+                dismissAlertDialog();
             }
         });
     }
     public void removeAllNotchDevice(View v){
+        showAlertDialog("Removing Paired Notches....", "Please wait");
         mNotchService.deletePairedDevices(null, new EmptyNotchCallback<Void>(){
             @Override
             public void onSuccess(@Nullable Void aVoid) {
                 Log.d(TAG, "NotchRemoveAllDevice: Success");
                 updateDeviceList(mNotchService.getLicense());
+                updateCurrentNetwork();
                 mNotchService.disconnect(new EmptyNotchCallback<Void>() {
                     @Override
                     public void onSuccess(@Nullable Void aVoid) {
                         Toast.makeText(mActivity, "Removed All Notch" , Toast.LENGTH_LONG).show();
+                        dismissAlertDialog();
+                    }
+
+                    @Override
+                    public void onFailure(@Nonnull NotchError notchError) {
+                        dismissAlertDialog();
                     }
                 });
             }
@@ -966,43 +1021,64 @@ public class MainActivity extends AppCompatActivity {
             public void onFailure(@Nonnull NotchError notchError) {
                 Log.d(TAG, "NotchRemoveAllDevice: Failed: " + notchError.getStatus());
                 Toast.makeText(mActivity, "Failed to Remove All Notch:\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                dismissAlertDialog();
             }
         });
     }
     public void connectToNetwork(View v){
+        showAlertDialog("Connection to Network....", "Please wait");
+        if(getChannel(mNotchService.getLicense()) != '1'){
+            mNotchChannel = NotchChannel.fromChar(getChannel(mNotchService.getLicense()));
+        }
+
         mNotchService.disconnect(new EmptyNotchCallback<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
                 mNotchService.uncheckedInit(mNotchChannel, new EmptyNotchCallback<NotchNetwork>() {
                     @Override
                     public void onSuccess(NotchNetwork notchNetwork) {
-                        super.onSuccess(notchNetwork);
                         updateCurrentNetwork();
                         updateDeviceList(mNotchService.getLicense());
                         Log.d(TAG, "ConnectToNetwork: Success");
                         Toast.makeText(mActivity, "ConnectToNetwork: Success", Toast.LENGTH_LONG).show();
+                        dismissAlertDialog();
                     }
 
                     @Override
                     public void onFailure(@Nonnull NotchError notchError) {
                         Log.d(TAG, "ConnectToNetwork: Failure: " + notchError.getStatus());
                         Toast.makeText(mActivity, "ConnectToNetwork: Failure\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                        dismissAlertDialog();
                     }
                 });
+            }
+
+            @Override
+            public void onFailure(@Nonnull NotchError notchError) {
+                Log.d(TAG, "Disconnect: Failure: " + notchError.getStatus());
+                Toast.makeText(mActivity, "Disconnect: Failure\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                dismissAlertDialog();
             }
         });
     }
     public void configureCalibration(View v){
+        showAlertDialog("Configuring Calibration....", "Please wait");
         mNotchService.uncheckedInit(mNotchChannel, new EmptyNotchCallback<NotchNetwork>() {
             @Override
             public void onSuccess(NotchNetwork notchNetwork) {
                 updateCurrentNetwork();
-//                super.onSuccess(notchNetwork);
                 Toast.makeText(mActivity, "Success UncheckedInit!\nConfiguring Calibration....", Toast.LENGTH_LONG).show();
                 mNotchService.configureCalibration(true, new EmptyNotchCallback<Void>(){
                     @Override
                     public void onSuccess(Void aVoid) {
-                        Toast.makeText(mActivity, "Success Calibration!\nReady to start Calibration", Toast.LENGTH_LONG).show();
+                        Toast.makeText(mActivity, "Success Configure Calibration!\nReady to start Calibration", Toast.LENGTH_LONG).show();
+                        dismissAlertDialog();
+                    }
+
+                    @Override
+                    public void onFailure(@Nonnull NotchError notchError) {
+                        Toast.makeText(mActivity, "Failed Configure Calibration:\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                        dismissAlertDialog();
                     }
                 });
             }
@@ -1010,25 +1086,149 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onFailure(@Nonnull NotchError notchError) {
                 Toast.makeText(mActivity, "Failed UncheckedInit:\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                dismissAlertDialog();
             }
         });
     }
     public void startCalibration(View v){
         Toast.makeText(mActivity, "Starting Calibration.....", Toast.LENGTH_LONG).show();
-        mNotchService.calibration(new EmptyNotchCallback<Measurement>(){
+        mNotchService.calibration(new EmptyNotchCallback<Measurement>());
+        mHandler.post(new Runnable() {
             @Override
-            public void onSuccess(@Nullable Measurement measurement) {
+            public void run() {
+                dockImage.setVisibility(View.VISIBLE);
+                mDockAnimation.setVisible(false, true);
+                mDockAnimation.start();
+            }
+        });
+        mHandler.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                dockImage.setVisibility(View.GONE);
+                mDockAnimation.stop();
+                showAlertDialog("Fetching Calibration Result....", "Please wait");
                 mNotchService.getCalibrationData(new EmptyNotchCallback<Boolean>(){
                     @Override
                     public void onSuccess(Boolean aBoolean) {
-                        Toast.makeText(mActivity, "SUCCESSFULLY COMPLETED CALIBRATION!", Toast.LENGTH_LONG).show();
+                        Log.d(TAG, "Successfully Completed Calibration");
+                        Toast.makeText(mActivity, "Successfully Completed Calibration", Toast.LENGTH_LONG).show();
+                        dismissAlertDialog();
+                    }
+
+                    @Override
+                    public void onFailure(@Nonnull NotchError notchError) {
+                        Log.d(TAG, "Failed Getting Calibration Data:\n" + notchError.getStatus());
+                        Toast.makeText(mActivity, "Failed Getting Calibration Data:\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                        dismissAlertDialog();
                     }
                 });
             }
+        }, CALIBRATION_TIME);
+    }
+    public void configureSteady(View v){
+        Skeleton skeleton;
+        try {
+            skeleton = Skeleton.from(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.skeleton_male), "UTF-8"));
+            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_1_chest))));
+//            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_6_upper_body))));
+
+            workout = workout.withRealTime(true);           // Only for real-time
+            workout = workout.withMeasurementType(MeasurementType.STEADY_SKIP);     // Only for real-time
+
+            mNotchWorkout = workout;
+            showAlertDialog("Initializing Steady....", "Please wait");
+            mNotchService.init(mNotchChannel, workout, new EmptyNotchCallback<NotchNetwork>() {
+                @Override
+                public void onSuccess(NotchNetwork notchNetwork) {
+                    updateCurrentNetwork();
+                    dismissAlertDialog();
+                    Log.d(TAG, "OnSuccess Init");
+//                    showAlertDialog("Configuring Steady....", "Please wait");
+
+                    // Display bone-notch configuration
+                    StringBuilder sb = new StringBuilder();
+                    sb.append("Measured bones:\n\n");
+                    if (mNotchWorkout != null) {
+                        for (Workout.BoneInfo info : mNotchWorkout.getBones().values()) {
+                            ColorPair colors = info.getColor();
+                            sb.append(info.getBone().getName()).append(": ");
+                            sb.append(colors.getPrimary().toString());
+                            sb.append(colors.getPrimary().equals(colors.getSecondary()) ? "" : ", " + colors.getSecondary().toString());
+                            sb.append("\n");
+                        }
+                    }
+
+                    showAlertDialog("Notch Devices:", sb.toString());
+
+                    mNotchService.configureSteady(MeasurementType.STEADY_SIMPLE, true, new EmptyNotchCallback<Void>() {
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            // Do nothing, leave text visible
+                            Log.d(TAG, "Successfully Configure Steady");
+                            Toast.makeText(mActivity, "Successfully Configure Steady", Toast.LENGTH_LONG).show();
+                            dismissAlertDialog();
+                            showAlertDialog("Notch Devices:", sb.toString());
+                        }
+
+                        @Override
+                        public void onFailure(@Nonnull NotchError notchError) {
+                            Log.d(TAG, "Failed to Configure Steady\n" + notchError.getStatus());
+                            Toast.makeText(mActivity, "Failed to Configure Steady\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                            dismissAlertDialog();
+                        }
+                    });
+                }
+
+                @Override
+                public void onFailure(@Nonnull NotchError notchError) {
+                    Log.d(TAG, "Failed to Initialized Notch\n" + notchError.getStatus());
+                    Toast.makeText(mActivity, "Failed to Initialized Notch\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+
+                    dismissAlertDialog();
+                }
+            });
+
+        } catch (Exception e) {
+            Log.e(TAG, "Error while loading skeleton file!", e);
+            dismissAlertDialog();
+            Toast.makeText(mActivity, "Error loading skeleton file\n" + e.getMessage(), Toast.LENGTH_LONG).show();
+        }
+    }
+    public void startSteady(View v){
+        showAlertDialog("Performing Steady Calibration....", "Please wait");
+        mNotchService.steady(new EmptyNotchCallback<Measurement>(){
+            @Override
+            public void onSuccess(Measurement measurement) {
+                Log.d(TAG, "Successfully Completed Steady\nVerifying Data....!");
+                Toast.makeText(mActivity, "Successfully complete Steady\nVerifying Data....!", Toast.LENGTH_LONG).show();
+                dismissAlertDialog();
+                showAlertDialog("Fetching Steady Data....", "Please wait");
+                mNotchService.getSteadyData(new EmptyNotchCallback<Void>(){
+                    @Override
+                    public void onSuccess(@Nullable Void aVoid) {
+                        Log.d(TAG, "Successfully Fetched Steady Data!");
+                        Toast.makeText(mActivity, "Successfully Fetched Steady Data!", Toast.LENGTH_LONG).show();
+                        dismissAlertDialog();
+                    }
+
+                    @Override
+                    public void onFailure(@Nonnull NotchError notchError) {
+                        Log.d(TAG, "Failed to Fetch Steady Data\n" + notchError.getStatus());
+                        Toast.makeText(mActivity, "Failed to Fetch Steady Data\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                        dismissAlertDialog();
+                    }
+                });
+            }
+
+            @Override
+            public void onFailure(@Nonnull NotchError notchError) {
+                Log.d(TAG, "Failed to complete Steady\n" + notchError.getStatus());
+                Toast.makeText(mActivity, "Failed to complete Steady\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                dismissAlertDialog();
+            }
         });
     }
-    public void configureSteady(View v){}
-    public void startSteady(View v){}
     public void startCapture(View v){}
+
     public void stopCapture(View v){}
 }

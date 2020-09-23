@@ -95,20 +95,18 @@
             android:text="Selected Channel"
             android:textColor="@color/blue"
             android:textSize="18sp"
-            android:visibility="gone"
             app:layout_constraintStart_toStartOf="@+id/deviceListTextView"
             app:layout_constraintTop_toBottomOf="@+id/pairNewDeviceButton" />
 
         <Button
             android:id="@+id/button9"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="180dp"
+            android:layout_height="50dp"
             android:layout_marginTop="8dp"
             android:background="@drawable/rounded_button"
             android:onClick="connectToNetwork"
             android:text="Connect to Network"
             android:textColor="#FFFFFF"
-            android:visibility="gone"
             app:layout_constraintStart_toStartOf="@+id/deviceListTextView"
             app:layout_constraintTop_toBottomOf="@+id/textView6" />
 
@@ -222,7 +220,6 @@
             app:layout_constraintBottom_toBottomOf="@+id/button15"
             app:layout_constraintStart_toEndOf="@+id/button15"
             app:layout_constraintTop_toTopOf="@+id/button15" />
-
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 

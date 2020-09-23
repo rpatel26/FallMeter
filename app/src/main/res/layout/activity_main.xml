@@ -10,7 +10,16 @@
         android:id="@+id/fragment_container"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_above="@+id/bottom_navigation"/>
+        android:layout_above="@+id/bottom_navigation">
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/dock_image"
+        android:layout_width="257dp"
+        android:layout_height="245dp"
+        android:layout_centerInParent="true"
+        android:visibility="visible"
+        app:srcCompat="@drawable/c0000" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottom_navigation"

@@ -1263,8 +1263,8 @@ public class MainActivity extends AppCompatActivity {
         Skeleton skeleton;
         try {
             skeleton = Skeleton.from(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.skeleton_male), "UTF-8"));
-            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_1_chest))));
-//            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_6_upper_body))));
+//            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_1_chest))));
+            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_6_full_body))));
 
             workout = workout.withRealTime(true);           // Only for real-time
             workout = workout.withMeasurementType(MeasurementType.STEADY_SKIP);     // Only for real-time
@@ -1366,7 +1366,9 @@ public class MainActivity extends AppCompatActivity {
         Skeleton skeleton;
         try {
             skeleton = Skeleton.from(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.skeleton_male), "UTF-8"));
-            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_1_chest))));
+//            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_1_chest))));
+            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_6_full_body))));
+
             workout = workout.withRealTime(true);
             workout = workout.withMeasurementType(MeasurementType.STEADY_SKIP);
 

@@ -12,31 +12,31 @@
             "color1": "Pink",
             "color2": "Pink",
             "frequency": 40
+        },
+        {
+            "name": "RightForeArm",
+            "color1": "Yellow",
+            "color2": "Yellow",
+            "frequency": 40
+        },
+        {
+            "name": "LeftForeArm",
+            "color1": "Red",
+            "color2": "Red",
+            "frequency": 40
+        },
+        {
+            "name": "RightFootTop",
+            "color1": "Green",
+            "color2": "Green",
+            "frequency": 40
+        },
+        {
+            "name": "LeftFootTop",
+            "color1": "Cyan",
+            "color2": "Cyan",
+            "frequency": 40
         }
-//        {
-//            "name": "RightForeArm",
-//            "color1": "Yellow",
-//            "color2": "Yellow",
-//            "frequency": 40
-//        },
-//        {
-//            "name": "LeftForeArm",
-//            "color1": "Red",
-//            "color2": "Red",
-//            "frequency": 40
-//        },
-//        {
-//            "name": "RightFootTop",
-//            "color1": "Green",
-//            "color2": "Green",
-//            "frequency": 40
-//        },
-//        {
-//            "name": "LeftFootTop",
-//            "color1": "Cyan",
-//            "color2": "Cyan",
-//            "frequency": 40
-//        }
     ],
     "master_bone": "ChestBottom",
     "special": {

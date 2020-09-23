@@ -53,6 +53,7 @@ import com.squareup.okhttp.internal.Util;
 import com.wearnotch.db.NotchDataBase;
 import com.wearnotch.db.model.Device;
 import com.wearnotch.framework.ActionDevice;
+import com.wearnotch.framework.Bone;
 import com.wearnotch.framework.ColorPair;
 import com.wearnotch.framework.Measurement;
 import com.wearnotch.framework.MeasurementType;
@@ -60,9 +61,12 @@ import com.wearnotch.framework.NotchChannel;
 import com.wearnotch.framework.NotchNetwork;
 import com.wearnotch.framework.Skeleton;
 import com.wearnotch.framework.Workout;
+import com.wearnotch.framework.visualiser.VisualiserData;
 import com.wearnotch.internal.util.EmptyCancellable;
 import com.wearnotch.internal.util.IOUtil;
+import com.wearnotch.notchmaths.fvec3;
 import com.wearnotch.service.NotchAndroidService;
+import com.wearnotch.service.common.Cancellable;
 import com.wearnotch.service.common.NotchCallback;
 import com.wearnotch.service.common.NotchError;
 import com.wearnotch.service.common.NotchProgress;
@@ -111,7 +115,7 @@ public class MainActivity extends AppCompatActivity {
     private IMUFragment imuFragment;
     private BloodPressureFragment bloodPressureFragment;
     private Fragment activeFragment;
-    BottomNavigationView bottomNavigationView;
+    private BottomNavigationView bottomNavigationView;
     private AlertDialog.Builder mAlertDialogBuilder;
     private AlertDialog mAlertDialog;
 
@@ -138,13 +142,11 @@ public class MainActivity extends AppCompatActivity {
     private ComponentName mNotchServiceComponent;
     private NotchChannel mNotchChannel;
     private Workout mNotchWorkout;
-    private NotchChannel mSelectedNotchChannel;
     private ImageView dockImage;
     private AnimationDrawable mDockAnimation;
-
-
-    private enum State {CALIBRATION, STEADY, CAPTURE}
-    private State mState;
+    private VisualiserData mNotchRealTimeData;
+    private Skeleton mNotchSkeleton;
+    private Cancellable c;
 
     @Override
     protected void onDestroy() {
@@ -942,7 +944,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-
     private char getChannel(final String user){
         if (mNotchDB == null) mNotchDB = NotchDataBase.getInst();
         Set<Character> channels = new HashSet<>();
@@ -954,6 +955,108 @@ public class MainActivity extends AppCompatActivity {
             return '1';
         }
         return (char) channels.toArray()[0];
+    }
+    private void configureForRealTimeCapture(){
+        c = mNotchService.capture(new NotchCallback<Void>() {
+            @Override
+            public void onProgress(NotchProgress progress) {
+                if (progress.getState() == NotchProgress.State.REALTIME_UPDATE) {
+                    mNotchRealTimeData = (VisualiserData) progress.getObject();
+                    mNotchSkeleton = mNotchRealTimeData.getSkeleton();
+                    calculateNotchAngle(mNotchRealTimeData.getStartingFrame());
+                }
+            }
+
+            @Override
+            public void onSuccess(Void nothing) {
+                dismissAlertDialog();
+            }
+
+            @Override
+            public void onFailure(NotchError notchError) {
+                Log.d(TAG, "Failed to Capture real-time data");
+                Toast.makeText(mActivity, "Failed to Capture real-time data", Toast.LENGTH_LONG).show();
+                dismissAlertDialog();
+            }
+
+            @Override
+            public void onCancelled() {
+                Log.d(TAG, "Real-time Measurement Stopped");
+                Toast.makeText(mActivity, "Real-time Measurement Stopped", Toast.LENGTH_LONG).show();
+                dismissAlertDialog();
+            }
+        });
+    }
+    private void calculateNotchAngle(int frameIndex){
+        new Thread(new Runnable() {
+            public void run() {
+                Bone chest = mNotchSkeleton.getBone("ChestBottom");
+                Bone neck = mNotchSkeleton.getBone("Neck");
+                Bone rightForeArm = mNotchSkeleton.getBone("RightForeArm");
+                Bone leftForeArm = mNotchSkeleton.getBone("LeftForeArm");
+                Bone rightTopFoot = mNotchSkeleton.getBone("RightFootTop");
+                Bone leftTopFoot = mNotchSkeleton.getBone("LeftFootTop");
+
+                String line = "";
+
+                line += readRawNotchData(chest, frameIndex) + ",";
+                line += readRawNotchData(neck, frameIndex) + ",";
+                line += readRawNotchData(rightForeArm, frameIndex) + ",";
+                line += readRawNotchData(leftForeArm, frameIndex) + ",";
+                line += readRawNotchData(rightTopFoot, frameIndex) + ",";
+                line += readRawNotchData(leftTopFoot, frameIndex);
+
+                line += "\n";
+
+                Log.d(TAG, "Real-Time Data:\n" + line);
+
+//                writeLogNotch("tag", line);
+            }
+        }).start();
+    }
+    private String readRawNotchData(Bone bone, int frameIndex){
+        String line = "";
+        fvec3 localBoneGyro = mNotchRealTimeData.getLocalSensorGyro(bone, frameIndex);
+        fvec3 localBoneAcc = mNotchRealTimeData.getLocalSensorAcc(bone, frameIndex);
+        fvec3 globalBoneGyro = mNotchRealTimeData.getLocalSensorGyro(bone, frameIndex);
+        fvec3 globalBoneAcc = mNotchRealTimeData.getGlobalSensorAcc(bone, frameIndex);
+
+        if(localBoneGyro != null){
+            line += localBoneGyro.get(0) + ",";
+            line += localBoneGyro.get(1) + ",";
+            line += localBoneGyro.get(2) + ",";
+        }
+        else{
+            line += "N/A, N/A, N/A,";
+        }
+
+        if(localBoneAcc != null){
+            line += localBoneAcc.get(0) + ",";
+            line += localBoneAcc.get(1) + ",";
+            line += localBoneAcc.get(2) + ",";
+        }
+        else{
+            line += "N/A, N/A, N/A,";
+        }
+
+        if(globalBoneGyro != null){
+            line += globalBoneGyro.get(0) + ",";
+            line += globalBoneGyro.get(1) + ",";
+            line += globalBoneGyro.get(2) + ",";
+        }
+        else{
+            line += "N/A, N/A, N/A,";
+        }
+
+        if(globalBoneAcc != null){
+            line += globalBoneAcc.get(0) + ",";
+            line += globalBoneAcc.get(1) + ",";
+            line += globalBoneAcc.get(2);
+        }
+        else{
+            line += "N/A, N/A, N/A";
+        }
+        return  line;
     }
 
     public void pairNewNotchDevice(View v){
@@ -1063,6 +1166,10 @@ public class MainActivity extends AppCompatActivity {
     }
     public void configureCalibration(View v){
         showAlertDialog("Configuring Calibration....", "Please wait");
+        if(getChannel(mNotchService.getLicense()) != '1'){
+            mNotchChannel = NotchChannel.fromChar(getChannel(mNotchService.getLicense()));
+        }
+
         mNotchService.uncheckedInit(mNotchChannel, new EmptyNotchCallback<NotchNetwork>() {
             @Override
             public void onSuccess(NotchNetwork notchNetwork) {
@@ -1228,7 +1335,53 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
-    public void startCapture(View v){}
+    public void startCapture(View v){
+        Skeleton skeleton;
+        try {
+            skeleton = Skeleton.from(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.skeleton_male), "UTF-8"));
+            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_1_chest))));
+            workout = workout.withRealTime(true);
+            workout = workout.withMeasurementType(MeasurementType.STEADY_SKIP);
 
+            mNotchWorkout = workout;
+            showAlertDialog("Initializing Capture....", "Please wait");
+            mNotchService.init(mNotchChannel, workout, new EmptyNotchCallback<NotchNetwork>() {
+                @Override
+                public void onSuccess(NotchNetwork notchNetwork) {
+                    updateCurrentNetwork();
+                    dismissAlertDialog();
+                    showAlertDialog("Successfully Initialized Notch...!", "Configuring for real-time capture.");
+
+                    mNotchService.configureCapture(false, new EmptyNotchCallback<Void>(){
+                        @Override
+                        public void onSuccess(Void aVoid) {
+                            Log.d(TAG, "Successfully Configured for real-time capture");
+                            showAlertDialog("Successfully Configured Notch....!", "Ready for Real-Time.");
+                            configureForRealTimeCapture();
+//                            dismissAlertDialog();
+                        }
+
+                        @Override
+                        public void onFailure(@Nonnull NotchError notchError) {
+                            Log.d(TAG, "Failed to Configured for real-time capture\n" + notchError.getStatus());
+                            Toast.makeText(mActivity, "Failed to Configured for real-time capture\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                            dismissAlertDialog();
+                        }
+                    });
+
+                }
+
+                @Override
+                public void onFailure(@Nonnull NotchError notchError) {
+                    Log.d(TAG, "Failed to Initialized Notch for real-time capture\n" + notchError.getStatus());
+                    Toast.makeText(mActivity, "Failed to Initialized Notch for real-time capture\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                    dismissAlertDialog();
+                }
+            });
+        } catch (Exception e) {
+            Log.e(TAG, "Error while loading skeleton file!", e);
+            Toast.makeText(mActivity, "Error while loading skeleton file!\n" + e.getMessage(), Toast.LENGTH_LONG).show();
+        }
+    }
     public void stopCapture(View v){}
 }

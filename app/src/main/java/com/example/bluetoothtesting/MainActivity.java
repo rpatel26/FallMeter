@@ -77,6 +77,7 @@ import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStreamReader;
+import java.lang.reflect.Array;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -960,7 +961,7 @@ public class MainActivity extends AppCompatActivity {
         c = mNotchService.capture(new NotchCallback<Void>() {
             @Override
             public void onProgress(NotchProgress progress) {
-                if (progress.getState() == NotchProgress.State.REALTIME_UPDATE) {
+                if (canRecordData == true && progress.getState() == NotchProgress.State.REALTIME_UPDATE) {
                     mNotchRealTimeData = (VisualiserData) progress.getObject();
                     mNotchSkeleton = mNotchRealTimeData.getSkeleton();
                     calculateNotchAngle(mNotchRealTimeData.getStartingFrame());
@@ -989,6 +990,7 @@ public class MainActivity extends AppCompatActivity {
     }
     private void calculateNotchAngle(int frameIndex){
         new Thread(new Runnable() {
+            @RequiresApi(api = Build.VERSION_CODES.O)
             public void run() {
                 Bone chest = mNotchSkeleton.getBone("ChestBottom");
                 Bone neck = mNotchSkeleton.getBone("Neck");
@@ -997,66 +999,91 @@ public class MainActivity extends AppCompatActivity {
                 Bone rightTopFoot = mNotchSkeleton.getBone("RightFootTop");
                 Bone leftTopFoot = mNotchSkeleton.getBone("LeftFootTop");
 
-                String line = "";
+                ArrayList<Float> notchData = new ArrayList<>();
+                notchData.add(globalHR);
+                notchData.add(globalRRI);
+                notchData.add(globalMeanRR/100);
+                notchData.add(globalSDNN/100);
+                notchData.add(globalPNN/100);
+                notchData.add(globalRMSSD/100);
+                notchData.add(globalSYS);
+                notchData.add(globalDIA);
+                notchData.add(globalMAP);
+                notchData.add(globalHR_Caretaker);
+                notchData.add(globalRESP);
 
-                line += readRawNotchData(chest, frameIndex) + ",";
-                line += readRawNotchData(neck, frameIndex) + ",";
-                line += readRawNotchData(rightForeArm, frameIndex) + ",";
-                line += readRawNotchData(leftForeArm, frameIndex) + ",";
-                line += readRawNotchData(rightTopFoot, frameIndex) + ",";
-                line += readRawNotchData(leftTopFoot, frameIndex);
+                notchData.addAll(readRawNotchData(chest, frameIndex));
+                notchData.addAll(readRawNotchData(neck, frameIndex));
+                notchData.addAll(readRawNotchData(rightForeArm, frameIndex));
+                notchData.addAll(readRawNotchData(leftForeArm, frameIndex));
+                notchData.addAll(readRawNotchData(rightTopFoot, frameIndex));
+                notchData.addAll(readRawNotchData(leftTopFoot, frameIndex));
 
-                line += "\n";
+                Log.d(TAG, "Real-Time Data:\n" + notchData);
 
-                Log.d(TAG, "Real-Time Data:\n" + line);
-
-//                writeLogNotch("tag", line);
+                // Saving Data
+                float [] floatArray = new float[notchData.size()];
+                int i = 0;
+                for(float f : notchData){
+                    floatArray[i++] = f;
+                }
+                recordData(TAG, floatArray);
             }
         }).start();
     }
-    private String readRawNotchData(Bone bone, int frameIndex){
-        String line = "";
+    private ArrayList<Float> readRawNotchData(Bone bone, int frameIndex){
         fvec3 localBoneGyro = mNotchRealTimeData.getLocalSensorGyro(bone, frameIndex);
         fvec3 localBoneAcc = mNotchRealTimeData.getLocalSensorAcc(bone, frameIndex);
         fvec3 globalBoneGyro = mNotchRealTimeData.getLocalSensorGyro(bone, frameIndex);
         fvec3 globalBoneAcc = mNotchRealTimeData.getGlobalSensorAcc(bone, frameIndex);
+        ArrayList<Float> data = new ArrayList<>();
 
         if(localBoneGyro != null){
-            line += localBoneGyro.get(0) + ",";
-            line += localBoneGyro.get(1) + ",";
-            line += localBoneGyro.get(2) + ",";
+            data.add(localBoneGyro.get(0));
+            data.add(localBoneGyro.get(1));
+            data.add(localBoneGyro.get(2));
         }
         else{
-            line += "N/A, N/A, N/A,";
+            data.add((float) 0.0);
+            data.add((float) 0.0);
+            data.add((float) 0.0);
         }
 
         if(localBoneAcc != null){
-            line += localBoneAcc.get(0) + ",";
-            line += localBoneAcc.get(1) + ",";
-            line += localBoneAcc.get(2) + ",";
+            data.add(localBoneAcc.get(0));
+            data.add(localBoneAcc.get(1));
+            data.add(localBoneAcc.get(2));
         }
         else{
-            line += "N/A, N/A, N/A,";
+            data.add((float) 0.0);
+            data.add((float) 0.0);
+            data.add((float) 0.0);
         }
 
         if(globalBoneGyro != null){
-            line += globalBoneGyro.get(0) + ",";
-            line += globalBoneGyro.get(1) + ",";
-            line += globalBoneGyro.get(2) + ",";
+            data.add(globalBoneGyro.get(0));
+            data.add(globalBoneGyro.get(1));
+            data.add(globalBoneGyro.get(2));
         }
         else{
-            line += "N/A, N/A, N/A,";
+            data.add((float) 0.0);
+            data.add((float) 0.0);
+            data.add((float) 0.0);
         }
 
         if(globalBoneAcc != null){
-            line += globalBoneAcc.get(0) + ",";
-            line += globalBoneAcc.get(1) + ",";
-            line += globalBoneAcc.get(2);
+            data.add(globalBoneAcc.get(0));
+            data.add(globalBoneAcc.get(1));
+            data.add(globalBoneAcc.get(2));
         }
         else{
-            line += "N/A, N/A, N/A";
+            data.add((float) 0.0);
+            data.add((float) 0.0);
+            data.add((float) 0.0);
         }
-        return  line;
+
+        Log.d(TAG, "RawNotchData: " + data);
+        return  data;
     }
 
     public void pairNewNotchDevice(View v){
@@ -1383,5 +1410,24 @@ public class MainActivity extends AppCompatActivity {
             Toast.makeText(mActivity, "Error while loading skeleton file!\n" + e.getMessage(), Toast.LENGTH_LONG).show();
         }
     }
-    public void stopCapture(View v){}
+    public void stopCapture(View v){
+        showAlertDialog("Stopping Notch Recording", "Please wait");
+        mNotchService.disconnect(new EmptyNotchCallback<Void>() {
+            @Override
+            public void onSuccess(Void aVoid) {
+                super.onSuccess(aVoid);
+                updateCurrentNetwork();
+                Log.d(TAG, "Notch Stopped Capturing");
+                Toast.makeText(mActivity, "Notch Stopped Capturing", Toast.LENGTH_LONG).show();
+                dismissAlertDialog();
+            }
+
+            @Override
+            public void onFailure(@Nonnull NotchError notchError) {
+                Log.d(TAG, "Failed to Stop Notch: " + notchError.getStatus());
+                Toast.makeText(mActivity, "Failed to Stop Notch\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
+                dismissAlertDialog();
+            }
+        });
+    }
 }

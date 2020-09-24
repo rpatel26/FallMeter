@@ -1,6 +1,9 @@
 package com.example.bluetoothtesting;
 
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.Intent;
+import android.content.IntentFilter;
 import android.util.Log;
 
 import com.caretakermedical.ble.CareTakerService;
@@ -9,11 +12,33 @@ import com.caretakermedical.ct.LibCT;
 public class BloodPressureData extends CareTakerService {
 
     static final String TAG = "BloodPressureData";
+    private BroadcastReceiver recordDataChanges = new BroadcastReceiver() {
+        @Override
+        public void onReceive(Context context, Intent intent) {
+            String action = "com.example.bluetoothtesting.ManualCalibration";
+            if(action.equals(intent.getAction())){
+
+                String systolic = "" + intent.getStringExtra("Systolic Data");
+                String diastolic = "" + intent.getStringExtra("Diastolic Data");
+                int sys = Integer.valueOf(systolic);
+                int dia = Integer.valueOf(diastolic);
+                Log.d(TAG, "Manual Calibration Clicked: Systolic = " + sys + "\t Diastolic = " + dia);
+                LibCT.BPSettings bpSettings = new LibCT.BPSettings();
+                bpSettings.systolicPressure = sys;
+                bpSettings.diastolicPressure = dia;
+                getBinder().startManualCal(bpSettings);
+            }
+        }
+    };
 
     @Override
     public void onCreate() {
         super.onCreate();
+        // Start background service to listen to record date changes
+        IntentFilter recordDataFilter = new IntentFilter("com.example.bluetoothtesting.ManualCalibration");
+        registerReceiver(recordDataChanges, recordDataFilter);
     }
+
 
 
     @Override
@@ -25,6 +50,7 @@ public class BloodPressureData extends CareTakerService {
 
     @Override
     public void onDestroy() {
+        unregisterReceiver(recordDataChanges);
         super.onDestroy();
     }
 
@@ -51,7 +77,12 @@ public class BloodPressureData extends CareTakerService {
         // 1: Sitting
         // 2: reclining
         // 3: Supine
-        getBinder().startAutoCal((short) 1);
+//        getBinder().startAutoCal((short) 1);
+    }
+
+    public void manualCalibration(){
+        // start manual calibration with default bp settings: sys=120, dia=75
+        getBinder().startManualCal(new LibCT.BPSettings());
     }
 
     /**
@@ -183,11 +214,19 @@ public class BloodPressureData extends CareTakerService {
         }
 
         if ( stream.intPulseWaveform != null ) {
-            Log.d(TAG, "Got pulse pressure waveform data");
+            Log.d(TAG, "Got pulse pressure waveform data: " + stream.intPulseWaveform.length);
         }
 
         if ( stream.rawPulseWaveform != null ) {
             Log.d(TAG, "Got raw pulse waveform data");
+
+//            Intent connectedIntent = new Intent(getApplicationContext().getPackageName() + "_BloodPressure");
+//            connectedIntent.putExtra(getApplicationContext().getPackageName() + "_BloodPressure_Systolic", vitals.systolic);
+//            connectedIntent.putExtra(getApplicationContext().getPackageName() + "_BloodPressure_Diastolic", vitals.diastolic);
+//            connectedIntent.putExtra(getApplicationContext().getPackageName() + "_BloodPressure_MAP", vitals.map);
+//            connectedIntent.putExtra(getApplicationContext().getPackageName() + "_BloodPressure_HR", vitals.heartRate);
+//            connectedIntent.putExtra(getApplicationContext().getPackageName() + "_BloodPressure_RESP", vitals.respiration);
+//            sendBroadcast(connectedIntent);
         }
 
         if ( stream.cuffPressure != null ) {

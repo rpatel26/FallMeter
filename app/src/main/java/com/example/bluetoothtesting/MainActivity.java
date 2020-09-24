@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.app.ActivityCompat;
-import androidx.core.app.JobIntentService;
 import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
@@ -27,7 +26,6 @@ import android.bluetooth.le.ScanResult;
 import android.content.BroadcastReceiver;
 import android.content.ComponentName;
 import android.content.Context;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.content.ServiceConnection;
@@ -39,17 +37,15 @@ import android.os.Environment;
 import android.os.Handler;
 import android.os.IBinder;
 import android.os.Looper;
-import android.telecom.ConnectionService;
-import android.util.AttributeSet;
 import android.util.Log;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.CompoundButton;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
+import com.fasterxml.jackson.databind.ObjectMapper;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
-import com.squareup.okhttp.internal.Util;
 import com.wearnotch.db.NotchDataBase;
 import com.wearnotch.db.model.Device;
 import com.wearnotch.framework.ActionDevice;
@@ -62,7 +58,6 @@ import com.wearnotch.framework.NotchNetwork;
 import com.wearnotch.framework.Skeleton;
 import com.wearnotch.framework.Workout;
 import com.wearnotch.framework.visualiser.VisualiserData;
-import com.wearnotch.internal.util.EmptyCancellable;
 import com.wearnotch.internal.util.IOUtil;
 import com.wearnotch.notchmaths.fvec3;
 import com.wearnotch.service.NotchAndroidService;
@@ -72,19 +67,23 @@ import com.wearnotch.service.common.NotchError;
 import com.wearnotch.service.common.NotchProgress;
 import com.wearnotch.service.network.NotchService;
 
+//import org.json.JSONObject;
+
 import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileWriter;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.InputStreamReader;
-import java.lang.reflect.Array;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.HashSet;
 import java.util.List;
+import java.util.Map;
 import java.util.Set;
 import java.util.UUID;
+import org.json.simple.JSONObject;
 
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
@@ -125,9 +124,18 @@ public class MainActivity extends AppCompatActivity {
     private int numHeartyPatchPts;
     private boolean canRecordData;
     private int numBloodPressurePts;
+    ArrayList<Float> systemData = new ArrayList<>();
 
     // Variables for Notch
+    private ArrayList<Float> notch1Data = new ArrayList<>();
+    private ArrayList<Float> notch2Data = new ArrayList<>();
+    private ArrayList<Float> notch3Data = new ArrayList<>();
+    private ArrayList<Float> notch4Data = new ArrayList<>();
+    private ArrayList<Float> notch5Data = new ArrayList<>();
+    private ArrayList<Float> notch6Data = new ArrayList<>();
+
     private static final String DEFAULT_USER_LICENSE = "Fam5ERAuAnQr18tR3Kpb";  // Extended License for Notch
+    private static final int CONFIG_FILE = R.raw.config_6_full_body;
     private static final long CALIBRATION_TIME = 7000L;
 
     private static final int REQUEST_ALL_PERMISSION = 1;
@@ -138,7 +146,6 @@ public class MainActivity extends AppCompatActivity {
     private final List<NotchServiceConnection> mNotchServiceConnections =
             new ArrayList<NotchServiceConnection>();
     private NotchDataBase mNotchDB;
-    private Measurement mCurrentNotchMeasurement;
     private NotchService mNotchService;
     private ComponentName mNotchServiceComponent;
     private NotchChannel mNotchChannel;
@@ -224,7 +231,6 @@ public class MainActivity extends AppCompatActivity {
 
         // Init Vars for Notch Devices
         notchService = new CustomNotchService();
-//        mNotchChannel = NotchChannel.fromChar('A');
 
         // Intent to start Notch Service
         Intent controlServiceIntent = new Intent(this, NotchAndroidService.class);
@@ -695,15 +701,18 @@ public class MainActivity extends AppCompatActivity {
     private void stopDataLog(){
         canRecordData = false;
         try {
+            Log.d(TAG, "Closing LOG File");
             logFile.close();
+            updateHeartyPatchLogFileName("Logging stopped");
         } catch (IOException e) {
+            Log.d(TAG, "Error Closing LOG File: " + e.getMessage());
             e.printStackTrace();
         }
-        updateHeartyPatchLogFileName("Logging stopped");
     }
     @RequiresApi(api = Build.VERSION_CODES.O)
     private void recordData(String tag, String[] values){
         if (logFile == null) {
+            Log.d(TAG, "Log File is NULL");
             return;
         }
 
@@ -726,8 +735,10 @@ public class MainActivity extends AppCompatActivity {
         line = line + "\n";
 
         try {
+            Log.d(TAG, "Writing to Log File");
             logFile.write(line);
         } catch (IOException e) {
+            Log.d(TAG, "Error Writing to Log File: " + e.getMessage());
             e.printStackTrace();
         }
     }
@@ -742,6 +753,14 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // UI Update for Blood Pressure
+    public void manualCalibration(View v){
+        TextView systolicTextView = findViewById(R.id.systolicTextView);
+        TextView diastolicTextView = findViewById(R.id.diastolicTextView);
+        Intent connectedIntent = new Intent("com.example.bluetoothtesting.ManualCalibration");
+        connectedIntent.putExtra("Systolic Data", "" + systolicTextView.getText());
+        connectedIntent.putExtra("Diastolic Data", "" + diastolicTextView.getText());
+        sendBroadcast(connectedIntent);
+    }
     private void updateBatteryLevelBloodPressure(final float newBatteryLevel){
         mActivity.runOnUiThread(new Runnable() {
             @Override
@@ -799,6 +818,28 @@ public class MainActivity extends AppCompatActivity {
                 int MAP = intent.getIntExtra(getApplicationContext().getPackageName() + "_BloodPressure_MAP", -1);
                 int HR = intent.getIntExtra(getApplicationContext().getPackageName() + "_BloodPressure_HR", -1);
                 int RESP = intent.getIntExtra(getApplicationContext().getPackageName() + "_BloodPressure_RESP", -1);
+
+                globalSYS = systolic;
+                globalDIA = diastolic;
+                globalMAP = MAP;
+                globalHR_Caretaker = HR;
+                globalRESP = RESP;
+
+                if(canRecordData && systolic != -1 && diastolic != -1 && MAP != -1 && HR != -1 && RESP != -1){
+                    Log.d(TAG, "Saving Data: " + globalSYS + " " + globalDIA);
+                    recordData(TAG, getNotchData());
+//                    recordData(TAG, new float[] {globalHR, globalRRI, (globalMeanRR/100),
+//                            (globalSDNN/100), (globalPNN/100), (globalRMSSD/100), globalSYS, globalDIA, globalMAP, globalHR_Caretaker, globalRESP});
+                }
+
+//                if(canRecordData){
+//                    Log.d(TAG, "Saving Data: " + globalSYS + " " + globalDIA);
+//                    recordData(TAG, new float[] {globalHR, globalRRI, (globalMeanRR/100),
+//                            (globalSDNN/100), (globalPNN/100), (globalRMSSD/100), globalSYS, globalDIA, globalMAP, globalHR_Caretaker, globalRESP,
+//                            0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f,
+//                            0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f, 0.0f});
+//                }
+
                 if(activeFragment == bloodPressureFragment && systolic != -1 && diastolic != -1 && MAP != -1 && HR != -1 && RESP != -1){
                     numBloodPressurePts++;
                     globalSYS = systolic;
@@ -809,10 +850,6 @@ public class MainActivity extends AppCompatActivity {
                     updateVitals(systolic, diastolic, MAP, HR, RESP);
                     updateNumPtsBloodPressure(numBloodPressurePts);
                     updateConnectionStatusBloodPressure("Connected");
-                    if(canRecordData){
-                        recordData(TAG, new float[] {globalHR, globalRRI, (globalMeanRR/100),
-                                (globalSDNN/100), (globalPNN/100), (globalRMSSD/100), globalSYS, globalDIA, globalMAP, globalHR_Caretaker, globalRESP});
-                    }
                 }
 
                 // Battery Update
@@ -1019,15 +1056,31 @@ public class MainActivity extends AppCompatActivity {
                 notchData.addAll(readRawNotchData(rightTopFoot, frameIndex));
                 notchData.addAll(readRawNotchData(leftTopFoot, frameIndex));
 
+                notch1Data = new ArrayList<>();
+                notch2Data = new ArrayList<>();
+                notch3Data = new ArrayList<>();
+                notch4Data = new ArrayList<>();
+                notch5Data = new ArrayList<>();
+                notch6Data = new ArrayList<>();
+
+                notch1Data.addAll(readRawNotchData(chest, frameIndex));
+                notch2Data.addAll(readRawNotchData(neck, frameIndex));
+                notch3Data.addAll(readRawNotchData(rightForeArm, frameIndex));
+                notch4Data.addAll(readRawNotchData(leftForeArm, frameIndex));
+                notch5Data.addAll(readRawNotchData(rightTopFoot, frameIndex));
+                notch6Data.addAll(readRawNotchData(leftTopFoot, frameIndex));
+
                 Log.d(TAG, "Real-Time Data:\n" + notchData);
+                float [] notchFloatArray = getNotchData();
+                recordData(TAG, notchFloatArray);
 
                 // Saving Data
-                float [] floatArray = new float[notchData.size()];
-                int i = 0;
-                for(float f : notchData){
-                    floatArray[i++] = f;
-                }
-                recordData(TAG, floatArray);
+//                float [] floatArray = new float[notchData.size()];
+//                int i = 0;
+//                for(float f : notchData){
+//                    floatArray[i++] = f;
+//                }
+//                recordData(TAG, floatArray);
             }
         }).start();
     }
@@ -1085,6 +1138,28 @@ public class MainActivity extends AppCompatActivity {
         Log.d(TAG, "RawNotchData: " + data);
         return  data;
     }
+    private float [] getNotchData(){
+        float[] floatArray = new float[11 + notch1Data.size() + notch2Data.size() + notch3Data.size() + notch4Data.size() + notch5Data.size() + notch6Data.size()];
+        int i = 0;
+        floatArray[i++] = globalHR;
+        floatArray[i++] = globalRRI;
+        floatArray[i++] = globalMeanRR/100;
+        floatArray[i++] = globalSDNN/100;
+        floatArray[i++] = globalPNN/100;
+        floatArray[i++] = globalRMSSD/100;
+        floatArray[i++] = globalSYS;
+        floatArray[i++] = globalDIA;
+        floatArray[i++] = globalMAP;
+        floatArray[i++] = globalHR_Caretaker;
+        floatArray[i++] = globalRESP;
+        for(float f : notch1Data) floatArray[i++] = f;
+        for(float f : notch2Data) floatArray[i++] = f;
+        for(float f : notch3Data) floatArray[i++] = f;
+        for(float f : notch4Data) floatArray[i++] = f;
+        for(float f : notch5Data) floatArray[i++] = f;
+        for(float f : notch6Data) floatArray[i++] = f;
+        return  floatArray;
+    }
 
     public void pairNewNotchDevice(View v){
         showAlertDialog("Pairing Notch....", "Please wait");
@@ -1123,6 +1198,7 @@ public class MainActivity extends AppCompatActivity {
                 Toast.makeText(mActivity, "Failed of Sync Pairing:\n" + notchError.getStatus(), Toast.LENGTH_LONG);
                 dismissAlertDialog();
             }
+
         });
     }
     public void removeAllNotchDevice(View v){
@@ -1262,7 +1338,27 @@ public class MainActivity extends AppCompatActivity {
     public void configureSteady(View v){
         Skeleton skeleton;
         try {
-            skeleton = Skeleton.from(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.skeleton_male), "UTF-8"));
+            Log.d(TAG, "This is working up to here....1");
+
+            InputStream input_stream = getApplicationContext().getResources().openRawResource(R.raw.skeleton_male);
+            Log.d(TAG, "This is working up to here....2");
+
+//            InputStream input_stream = getResources().openRawResource(R.raw.skeleton_male);
+            int size = input_stream.available();
+            byte [] buffer = new byte[size];
+            input_stream.read(buffer);
+            input_stream.close();
+            String json = new String(buffer, "UTF-8");
+
+
+            ObjectMapper mapper = new ObjectMapper();
+            Map<String, Object> jsonMap = mapper.readValue(input_stream, Map.class);
+            JSONObject jsonObject = new JSONObject(jsonMap);
+
+            skeleton = Skeleton.from(jsonObject);
+            Log.d(TAG, "This is working up to here....20");
+
+//            skeleton = Skeleton.from(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.skeleton_male), "UTF-8"));
 //            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_1_chest))));
             Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_6_full_body))));
 
@@ -1323,7 +1419,7 @@ public class MainActivity extends AppCompatActivity {
             });
 
         } catch (Exception e) {
-            Log.e(TAG, "Error while loading skeleton file!", e);
+            Log.e(TAG, "Error while loading skeleton file: " + e.getMessage());
             dismissAlertDialog();
             Toast.makeText(mActivity, "Error loading skeleton file\n" + e.getMessage(), Toast.LENGTH_LONG).show();
         }

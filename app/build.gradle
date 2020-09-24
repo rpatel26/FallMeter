@@ -71,6 +71,10 @@ dependencies {
     //    Dependencies for Notch App
     implementation 'com.notch.sdk:sdk-android:1.1.355'
     appConfig 'com.notch.sdk:sdk-android:1.1.355'
+
+    compile 'com.fasterxml.jackson.core:jackson-core:2.5.3'
+    compile 'com.fasterxml.jackson.core:jackson-annotations:2.5.3'
+    compile 'com.fasterxml.jackson.core:jackson-databind:2.5.3'
 }
 
 task convertObj(type: JavaExec) {

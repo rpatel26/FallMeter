@@ -196,5 +196,76 @@
             app:layout_constraintBottom_toBottomOf="@+id/imageView2"
             app:layout_constraintEnd_toEndOf="@+id/caretakerStatusTextView"
             app:layout_constraintTop_toTopOf="@+id/imageView2" />
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="manualCalibration"
+            android:text="Manual Calibration"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="@+id/RESPTextView"
+            app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+        <Button
+            android:id="@+id/button2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="1000dp"
+            android:text="Button"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/systolicTextView"
+            android:layout_width="100dp"
+            android:layout_height="47dp"
+            android:layout_marginTop="8dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/button"
+            app:layout_constraintTop_toBottomOf="@+id/button" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Systolic:"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/systolicTextView"
+            app:layout_constraintEnd_toStartOf="@+id/systolicTextView"
+            app:layout_constraintTop_toTopOf="@+id/systolicTextView" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Diastoclic:"
+            android:textColor="#FFFFFF"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/diastolicTextView"
+            app:layout_constraintEnd_toStartOf="@+id/diastolicTextView"
+            app:layout_constraintTop_toTopOf="@+id/diastolicTextView" />
+
+        <EditText
+            android:id="@+id/diastolicTextView"
+            android:layout_width="100dp"
+            android:layout_height="46dp"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#FFFFFF"
+            android:ems="10"
+            android:inputType="numberDecimal"
+            android:textColor="#FFFFFF"
+            app:layout_constraintEnd_toEndOf="@+id/systolicTextView"
+            app:layout_constraintTop_toBottomOf="@+id/systolicTextView" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>

@@ -75,6 +75,7 @@ import java.io.FileWriter;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.nio.charset.StandardCharsets;
 import java.time.LocalDateTime;
 import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
@@ -88,6 +89,12 @@ import org.json.simple.JSONObject;
 import javax.annotation.Nonnull;
 import javax.annotation.Nullable;
 
+//        {
+//                "name": "LeftForeArm",
+//                "color1": "Red",
+//                "color2": "Red",
+//                "frequency": 40
+//                },
 public class MainActivity extends AppCompatActivity {
     private static final String TAG = MainActivity.class.getSimpleName();
     private Activity mActivity;
@@ -1338,27 +1345,7 @@ public class MainActivity extends AppCompatActivity {
     public void configureSteady(View v){
         Skeleton skeleton;
         try {
-            Log.d(TAG, "This is working up to here....1");
-
-            InputStream input_stream = getApplicationContext().getResources().openRawResource(R.raw.skeleton_male);
-            Log.d(TAG, "This is working up to here....2");
-
-//            InputStream input_stream = getResources().openRawResource(R.raw.skeleton_male);
-            int size = input_stream.available();
-            byte [] buffer = new byte[size];
-            input_stream.read(buffer);
-            input_stream.close();
-            String json = new String(buffer, "UTF-8");
-
-
-            ObjectMapper mapper = new ObjectMapper();
-            Map<String, Object> jsonMap = mapper.readValue(input_stream, Map.class);
-            JSONObject jsonObject = new JSONObject(jsonMap);
-
-            skeleton = Skeleton.from(jsonObject);
-            Log.d(TAG, "This is working up to here....20");
-
-//            skeleton = Skeleton.from(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.skeleton_male), "UTF-8"));
+            skeleton = Skeleton.from(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.skeleton_male), StandardCharsets.UTF_8));
 //            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_1_chest))));
             Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_6_full_body))));
 
@@ -1461,7 +1448,7 @@ public class MainActivity extends AppCompatActivity {
     public void startCapture(View v){
         Skeleton skeleton;
         try {
-            skeleton = Skeleton.from(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.skeleton_male), "UTF-8"));
+            skeleton = Skeleton.from(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.skeleton_male), StandardCharsets.UTF_8));
 //            Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_1_chest))));
             Workout workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_6_full_body))));
 

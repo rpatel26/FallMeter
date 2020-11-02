@@ -20,12 +20,6 @@
             "frequency": 40
         },
         {
-            "name": "LeftForeArm",
-            "color1": "Red",
-            "color2": "Red",
-            "frequency": 40
-        },
-        {
             "name": "RightFootTop",
             "color1": "Green",
             "color2": "Green",

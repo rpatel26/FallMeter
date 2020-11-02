@@ -989,6 +989,16 @@ public class MainActivity extends AppCompatActivity {
             }
         });
     }
+    private void updateNotchBatteryLevel(final String newBatteryLevel){
+        mActivity.runOnUiThread(new Runnable() {
+            @Override
+            public void run() {
+                if(activeFragment == imuFragment){
+                    ((IMUFragment)activeFragment).updateNotchBatteryLevel(newBatteryLevel);
+                }
+            }
+        });
+    }
     private char getChannel(final String user){
         if (mNotchDB == null) mNotchDB = NotchDataBase.getInst();
         Set<Character> channels = new HashSet<>();
@@ -1512,6 +1522,29 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG, "Failed to Stop Notch: " + notchError.getStatus());
                 Toast.makeText(mActivity, "Failed to Stop Notch\n" + notchError.getStatus(), Toast.LENGTH_LONG).show();
                 dismissAlertDialog();
+            }
+        });
+    }
+
+    public void notchBatteryLevelButtonClicked(View v){
+        mNotchService.checkBatteryStatus(new EmptyNotchCallback<Void>(){
+            @Override
+            public void onSuccess(@Nullable Void aVoid) {
+                super.onSuccess(aVoid);
+                List<Device> notchDevicesList = mNotchService.findAllDevices();
+                StringBuilder sb = new StringBuilder();
+                sb.append("Battery Level:\n");
+                for(Device d: notchDevicesList){
+                    Log.d(TAG, "NOTCH Battery Level: " + d.getBatteryPercent() + "\t for device " + d.getNotchDevice().getDeviceMac());
+                    sb.append(d.getNotchDevice().getDeviceMac() + ": " + d.getBatteryPercent() + "%\n");
+                }
+                sb.append("\n\n\n\n");
+                updateNotchBatteryLevel(sb.toString());
+            }
+
+            @Override
+            public void onFailure(@Nonnull NotchError notchError) {
+                Log.d(TAG, "Failed to read Notch bettery level");
             }
         });
     }

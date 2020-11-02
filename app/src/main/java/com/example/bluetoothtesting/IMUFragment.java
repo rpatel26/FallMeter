@@ -17,6 +17,8 @@ public class IMUFragment extends Fragment {
     private  View root;
     private TextView deviceListTextView;
     private TextView currentNetworkNextView;
+    private TextView batteryLevelTextView;
+
 
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
@@ -24,6 +26,7 @@ public class IMUFragment extends Fragment {
         root = inflater.inflate(R.layout.fragment_imu, container, false);
         deviceListTextView = root.findViewById(R.id.deviceListTextView);
         currentNetworkNextView = root.findViewById(R.id.currentNetworkTextView);
+        batteryLevelTextView = root.findViewById(R.id.notchBatteryLevelTextView);
 
         if(savedInstanceState != null){
             deviceListTextView.setText(savedInstanceState.getString("DeviceListText"));
@@ -52,5 +55,9 @@ public class IMUFragment extends Fragment {
 
     public void updateCurrentNetworkTextView(String newNetwork){
         currentNetworkNextView.setText(newNetwork);
+    }
+
+    public void updateNotchBatteryLevel(String newBatteryLevel){
+        batteryLevelTextView.setText(newBatteryLevel);
     }
 }

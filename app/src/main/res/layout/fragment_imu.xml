@@ -221,6 +221,28 @@
             app:layout_constraintStart_toEndOf="@+id/button15"
             app:layout_constraintTop_toTopOf="@+id/button15" />
 
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:onClick="notchBatteryLevelButtonClicked"
+            android:background="@drawable/rounded_button"
+            android:textColor="#FFFFFF"
+            android:text="Check Battery Level"
+            app:layout_constraintStart_toStartOf="@+id/textView20"
+            app:layout_constraintTop_toBottomOf="@+id/textView20" />
+
+        <TextView
+            android:id="@+id/notchBatteryLevelTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Battry Level:"
+            android:textColor="@color/blue"
+            app:layout_constraintStart_toStartOf="@+id/button3"
+            app:layout_constraintTop_toBottomOf="@+id/button3" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
 </ScrollView>

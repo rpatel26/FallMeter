@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Parkinson Data Collection</string>
+    <string name="app_name">Fall_Meter</string>
 
     <!-- Info Activity -->
     <string name="title_activity_info">Parkinson_App_Android</string>

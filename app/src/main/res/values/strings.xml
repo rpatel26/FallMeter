@@ -74,4 +74,9 @@
     <string name="text1">Sample app illustrating CareTakerService</string>
     <string name="text2">The service runs in the background.</string>
     <string name="text3">Use \'logcat SampleService:D *:S\' to view data.</string>
+
+    // Notch Background Service
+    <string name="notchBackgroundServiceLabel">NotchBackgroundService</string>
+    <string name="notchBackgroundServiceDescription">To enable Notch to collect data in the background.</string>
+
 </resources>

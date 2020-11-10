@@ -21,6 +21,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
     <uses-permission android:name="android.permission.WRITE_INTERNAL_STORAGE" />
 
+<!--    To enable AlertDialog from Background Service-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
 
     <!-- Wifi permissions are only needed if the app needs to turn off wifi to improve ble connections -->
     <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
@@ -55,6 +58,11 @@
         </service>
 
         <service android:name="com.wearnotch.service.NotchAndroidService" />
+
+        <service android:name=".NotchBackgroundService"
+            android:enabled="true"
+            android:label="@string/notchBackgroundServiceLabel"
+            android:description="@string/notchBackgroundServiceDescription"/>
 
     </application>
 

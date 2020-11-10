@@ -248,9 +248,11 @@
 
         <Switch
             android:id="@+id/recordDataSwitch"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="41dp"
+            android:layout_height="22dp"
             android:checked="false"
+            android:scaleX="1.5"
+            android:scaleY="1.5"
             app:layout_constraintBottom_toBottomOf="@+id/textView21"
             app:layout_constraintEnd_toEndOf="@+id/linearLayout"
             app:layout_constraintTop_toTopOf="@+id/textView21"

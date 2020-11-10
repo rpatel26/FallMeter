@@ -1,0 +1,726 @@
+[
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0069.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0069.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_round.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0092.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0092.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0024.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0024.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_notch_clipart.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable\\ic_notch_clipart.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable_rounded_button.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable\\rounded_button.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0116.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0116.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_blood_pressure.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\layout\\fragment_blood_pressure.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0077.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0077.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0124.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0124.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0084.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0084.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0046.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0046.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0108.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0108.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_signalstrength0.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\signalstrength0.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0001.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0001.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0070.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0070.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0016.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0016.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0099.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0099.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0062.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0062.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0101.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0101.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0054.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0054.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0008.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0008.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0023.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0023.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0123.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0123.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0093.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0093.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0010.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0010.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0055.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0055.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0110.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0110.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0068.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0068.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0017.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0017.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0117.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0117.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher_round.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher_round.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_foreground.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0132.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0132.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0032.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0032.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0000.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0000.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0100.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0100.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0039.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0039.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_refresh_black_24dp.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\ic_refresh_black_24dp.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0007.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0007.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0061.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0061.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0107.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0107.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\raw_config_6_upper_body.js.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\raw\\config_6_upper_body.js"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0018.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0018.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0122.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0122.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0056.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0056.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0118.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0118.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0060.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0060.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_flat_logo_white.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\flat_logo_white.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0130.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0130.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_round.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0045.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0045.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0071.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0071.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0083.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0083.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0097.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0097.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0059.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0059.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\raw_skeleton_male.js.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\raw\\skeleton_male.js"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0033.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0033.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_signalstrength2.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\signalstrength2.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0030.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0030.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0048.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0048.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0086.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0086.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0022.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0022.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0094.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0094.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_notch_progressbar.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\notch_progressbar.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_sensor_anim.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\sensor_anim.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0040.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0040.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0076.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0076.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\raw_config_6_full_body.js.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\raw\\config_6_full_body.js"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0025.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0025.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0125.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0125.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0089.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0089.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0112.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0112.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0038.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0038.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher_round.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_ekg.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable\\ic_ekg.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0091.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0091.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0012.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0012.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_round.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0028.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0028.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\raw_hello_3notches.notch.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\raw\\hello_3notches.notch"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0079.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0079.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0128.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0128.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0050.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0050.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0066.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0066.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0063.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0063.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0053.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0053.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0115.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0115.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_imu.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\layout\\fragment_imu.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0102.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0102.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0015.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0015.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0002.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0002.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_stat_name.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\ic_stat_name.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_signalstrength4.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\signalstrength4.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\layout_activity_main.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0105.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0105.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0073.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0073.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0088.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0088.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0043.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0043.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_sync_black_24dp.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\ic_sync_black_24dp.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0058.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0058.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_base_new.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\base_new.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0005.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0005.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0051.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0051.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0127.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0127.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0027.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0027.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0065.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0065.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0096.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0096.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0020.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0020.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0081.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0081.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0120.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0120.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\layout_fragment_heart_rate.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\layout\\fragment_heart_rate.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0035.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0035.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0119.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0119.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0104.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0104.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0042.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0042.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0004.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0004.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0080.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0080.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0049.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0049.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_stat_name.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable\\ic_stat_name.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0036.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0036.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_background.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_signalstrength3.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\signalstrength3.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0113.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0113.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_border_gray.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\border_gray.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0126.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0126.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\menu_bottom_navigation.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\menu\\bottom_navigation.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0013.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0013.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0026.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0026.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0087.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0087.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0074.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0074.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0037.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0037.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0041.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0041.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0103.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0103.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0075.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0075.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_ic_launcher_foreground.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\ic_launcher_foreground.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0111.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0111.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0129.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0129.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0090.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0090.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0011.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0011.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0052.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0052.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0064.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0064.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0078.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0078.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0014.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0014.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_bp_clipart.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable\\ic_bp_clipart.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0029.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0029.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0106.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0106.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0003.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0003.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable_ic_launcher_background.xml.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable\\ic_launcher_background.xml"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0114.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0114.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_round.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_round.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0067.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0067.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher_foreground.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher_foreground.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0006.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0006.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0019.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0019.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0044.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0044.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0085.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0085.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0031.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0031.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0072.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0072.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\raw_config_1_chest.js.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\raw\\config_1_chest.js"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0057.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0057.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0131.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0131.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0109.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0109.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0082.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0082.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0095.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0095.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0098.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0098.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0009.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0009.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0021.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0021.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0034.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0034.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0047.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0047.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_signalstrength1.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\signalstrength1.png"
+    },
+    {
+        "merged": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\build\\intermediates\\res\\merged\\debug\\drawable-v24_c0121.png.flat",
+        "source": "K:\\My docs\\Proposal\\Multimodality Fall detection\\Ravi\\FallMeter-master_09242020\\FallMeter_11022020\\app\\src\\main\\res\\drawable-v24\\c0121.png"
+    }
+]

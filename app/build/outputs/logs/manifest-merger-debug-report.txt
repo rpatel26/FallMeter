@@ -1,0 +1,336 @@
+-- Merging decision tree log ---
+manifest
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:2:1-69:12
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\80143ca1873f763be6d1d286578a0cff\material-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\35b54846cccd5a6f91ffd88208e7fbc8\constraintlayout-2.0.1\AndroidManifest.xml:2:1-11:12
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0d69aea288bd9c77afa4f8afd7c35fe5\appcompat-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\5dcb72bf92bd58ad7ea916bf3a0ed4fd\recyclerview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\5ca262859c3133a4aa973ae959ce2061\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\6aba77ce87b62d8347ca6f06e6145185\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:2:1-20:12
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:2:1-20:12
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\844e6d8d110901814b6cf2c0e58db777\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\f571276bff67684a540f564f5677638a\fragment-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\12bcbaca3353ca5c1538ef4a6ba281fb\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\1e19b627048259720a9293cff54eca4b\drawerlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\4b7ccbf1545389655242b31b69a0c2ef\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\ab871377b97209c4e4b19ed0eade4b72\transition-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\9f787e057b2287836884ce91071f4cb1\cardview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\5772398f154fbb421660eae656082fcd\viewpager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\caea093eaa3f4ab10bb21ae1108e4fce\loader-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\4cd09af75b4e9c80a52041a8e1774876\jetified-activity-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\6e4c8d1772fc6d6ee2099c68eedf1c03\vectordrawable-animated-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\5c010204b349cb67993103f3db4846c3\vectordrawable-1.1.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\25a86418cd5f5fb0e0fa98b4559da7df\coordinatorlayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\041bb1c3a0dbc07996e40bbb615a03fc\slidingpanelayout-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\457b24bb365487f19b919b9304bfe494\customview-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a7f62cef6f2580716be1fbc0bf2d19f1\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.core:core:1.3.1] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\dd785f24378047182b1aacdcc6f28fd8\core-1.3.1\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\1653319b2d58e30ed9313b0c2df5947e\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\25d8934de3004385e90543e0b354fff1\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a89fd51e9582eccdee29149516da0a3b\documentfile-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\65ffefdcdf6ac37c61296df8feb5c9c7\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.print:print:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\217472ccd08ea4a85c967983d0668f8b\print-1.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\31fe7ec3156d932311e1d63e5afe3838\lifecycle-runtime-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a00281b5d84046061d87ced0c5ed5d6f\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\7526d421bacfef31921c7043f85ffde8\jetified-savedstate-1.0.0\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\13f6a8a8ac08da7eb6eca2e6990d51f4\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\be7a7dfb68705840901dbd39fdfd186a\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\43a209a1574b998fc4c3256029348641\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:2:1-26:12
+MERGED from [com.notch.visualiser:visualiser-android:1.2.20] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\42a50ce8e4b88080d1dd6c144264ac3a\jetified-visualiser-android-1.2.20\AndroidManifest.xml:2:1-17:12
+MERGED from [com.notch.database:database-android:1.0.37] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\cd2a353c0be78473c42e16dd33f9ea60\jetified-database-android-1.0.37\AndroidManifest.xml:2:1-17:12
+INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:2:1-69:12
+INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:2:1-69:12
+	package
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:3:5-43
+		INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+		INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+	android:versionName
+		INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:2:1-69:12
+		INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+	android:versionCode
+		INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:2:1-69:12
+		INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+	xmlns:android
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:2:11-69
+uses-feature#android.hardware.bluetooth_le
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:8:5-10:35
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:11:5-13:35
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:11:5-13:35
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:11:5-13:35
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:11:5-13:35
+	android:required
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:10:9-32
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:9:9-53
+uses-permission#android.permission.BLUETOOTH
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:12:5-68
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:15:5-68
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:15:5-68
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:11:5-68
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:11:5-68
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:15:5-68
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:15:5-68
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:12:22-65
+uses-permission#android.permission.BLUETOOTH_ADMIN
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:13:5-74
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:16:5-74
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:16:5-74
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:12:5-74
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:12:5-74
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:16:5-74
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:16:5-74
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:13:22-71
+uses-permission#android.permission.BLUETOOTH_PRIVILEGED
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:14:5-78
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:17:5-79
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:17:5-79
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:14:22-76
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:15:5-79
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:15:22-76
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:16:5-80
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:18:5-81
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:18:5-81
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:13:5-81
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:13:5-81
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:18:5-81
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:18:5-81
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:16:22-78
+uses-permission#android.permission.WAKE_LOCK
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:17:5-68
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:17:22-65
+uses-permission#android.permission.INTERNET
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:18:5-67
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:14:5-67
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:14:5-67
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:20:5-67
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:20:5-67
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:18:22-64
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:19:5-79
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:19:5-79
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:19:5-79
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:19:22-76
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:21:5-81
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:17:5-81
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:17:5-81
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:16:5-81
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:16:5-81
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:22:5-81
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:21:22-78
+uses-permission#android.permission.WRITE_INTERNAL_STORAGE
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:22:5-81
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:22:22-78
+uses-permission#android.permission.SYSTEM_ALERT_WINDOW
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:25:5-78
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:25:22-75
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:29:5-76
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:17:5-76
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:17:5-76
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:23:5-76
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:23:5-76
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:29:22-73
+uses-permission#android.permission.CHANGE_WIFI_STATE
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:30:5-76
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:18:5-76
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:18:5-76
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:24:5-76
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:24:5-76
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:30:22-73
+application
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:33:5-67:19
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\80143ca1873f763be6d1d286578a0cff\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\80143ca1873f763be6d1d286578a0cff\material-1.0.0\AndroidManifest.xml:22:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\35b54846cccd5a6f91ffd88208e7fbc8\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\35b54846cccd5a6f91ffd88208e7fbc8\constraintlayout-2.0.1\AndroidManifest.xml:9:5-20
+MERGED from [androidx.core:core:1.3.1] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\dd785f24378047182b1aacdcc6f28fd8\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.core:core:1.3.1] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\dd785f24378047182b1aacdcc6f28fd8\core-1.3.1\AndroidManifest.xml:24:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\25d8934de3004385e90543e0b354fff1\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\25d8934de3004385e90543e0b354fff1\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [com.notch.visualiser:visualiser-android:1.2.20] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\42a50ce8e4b88080d1dd6c144264ac3a\jetified-visualiser-android-1.2.20\AndroidManifest.xml:11:5-15:19
+MERGED from [com.notch.visualiser:visualiser-android:1.2.20] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\42a50ce8e4b88080d1dd6c144264ac3a\jetified-visualiser-android-1.2.20\AndroidManifest.xml:11:5-15:19
+MERGED from [com.notch.database:database-android:1.0.37] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\cd2a353c0be78473c42e16dd33f9ea60\jetified-database-android-1.0.37\AndroidManifest.xml:11:5-15:19
+MERGED from [com.notch.database:database-android:1.0.37] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\cd2a353c0be78473c42e16dd33f9ea60\jetified-database-android-1.0.37\AndroidManifest.xml:11:5-15:19
+	android:requestLegacyExternalStorage
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:40:9-52
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.3.1] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\dd785f24378047182b1aacdcc6f28fd8\core-1.3.1\AndroidManifest.xml:24:18-86
+	android:supportsRtl
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:38:9-35
+	android:label
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:36:9-41
+	android:roundIcon
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:37:9-54
+	android:icon
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:35:9-43
+	android:allowBackup
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:34:9-35
+	android:theme
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:39:9-40
+service#com.caretakermedical.ble.BleService
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:42:9-93
+	android:enabled
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:42:69-91
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:42:18-68
+activity#com.example.bluetoothtesting.MainActivity
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:44:9-50:20
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:44:19-47
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:45:13-49:29
+action#android.intent.action.MAIN
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:46:17-69
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:46:25-66
+category#android.intent.category.LAUNCHER
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:48:17-77
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:48:27-74
+service#com.example.bluetoothtesting.BloodPressureData
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:53:9-58:19
+	android:enabled
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:55:13-35
+	android:label
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:56:13-46
+	android:description
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:57:13-51
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:54:13-46
+service#com.wearnotch.service.NotchAndroidService
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:60:9-77
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:60:18-74
+service#com.example.bluetoothtesting.NotchBackgroundService
+ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:62:9-65:78
+	android:enabled
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:63:13-35
+	android:label
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:64:13-64
+	android:description
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:65:13-76
+	android:name
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:62:18-56
+uses-sdk
+INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\80143ca1873f763be6d1d286578a0cff\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.material:material:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\80143ca1873f763be6d1d286578a0cff\material-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\35b54846cccd5a6f91ffd88208e7fbc8\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.constraintlayout:constraintlayout:2.0.1] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\35b54846cccd5a6f91ffd88208e7fbc8\constraintlayout-2.0.1\AndroidManifest.xml:5:5-7:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0d69aea288bd9c77afa4f8afd7c35fe5\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat:1.2.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0d69aea288bd9c77afa4f8afd7c35fe5\appcompat-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\5dcb72bf92bd58ad7ea916bf3a0ed4fd\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.recyclerview:recyclerview:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\5dcb72bf92bd58ad7ea916bf3a0ed4fd\recyclerview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\5ca262859c3133a4aa973ae959ce2061\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\5ca262859c3133a4aa973ae959ce2061\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\6aba77ce87b62d8347ca6f06e6145185\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\6aba77ce87b62d8347ca6f06e6145185\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:7:5-9:41
+MERGED from [com.example.dev.caretakervitalsapp:libcaretaker-v1.6.37:] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\eea3d57943c2dcadb12634ac29a8df94\jetified-libcaretaker-v1.6.37\AndroidManifest.xml:7:5-9:41
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:7:5-9:41
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:7:5-9:41
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\844e6d8d110901814b6cf2c0e58db777\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\844e6d8d110901814b6cf2c0e58db777\cursoradapter-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\f571276bff67684a540f564f5677638a\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.fragment:fragment:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\f571276bff67684a540f564f5677638a\fragment-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\12bcbaca3353ca5c1538ef4a6ba281fb\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.appcompat:appcompat-resources:1.2.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\12bcbaca3353ca5c1538ef4a6ba281fb\jetified-appcompat-resources-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\1e19b627048259720a9293cff54eca4b\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\1e19b627048259720a9293cff54eca4b\drawerlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\4b7ccbf1545389655242b31b69a0c2ef\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\4b7ccbf1545389655242b31b69a0c2ef\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\ab871377b97209c4e4b19ed0eade4b72\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.transition:transition:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\ab871377b97209c4e4b19ed0eade4b72\transition-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\9f787e057b2287836884ce91071f4cb1\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.cardview:cardview:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\9f787e057b2287836884ce91071f4cb1\cardview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\5772398f154fbb421660eae656082fcd\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.viewpager:viewpager:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\5772398f154fbb421660eae656082fcd\viewpager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\caea093eaa3f4ab10bb21ae1108e4fce\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.loader:loader:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\caea093eaa3f4ab10bb21ae1108e4fce\loader-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\4cd09af75b4e9c80a52041a8e1774876\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.activity:activity:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\4cd09af75b4e9c80a52041a8e1774876\jetified-activity-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\6e4c8d1772fc6d6ee2099c68eedf1c03\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable-animated:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\6e4c8d1772fc6d6ee2099c68eedf1c03\vectordrawable-animated-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\5c010204b349cb67993103f3db4846c3\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.vectordrawable:vectordrawable:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\5c010204b349cb67993103f3db4846c3\vectordrawable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\25a86418cd5f5fb0e0fa98b4559da7df\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\25a86418cd5f5fb0e0fa98b4559da7df\coordinatorlayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\041bb1c3a0dbc07996e40bbb615a03fc\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\041bb1c3a0dbc07996e40bbb615a03fc\slidingpanelayout-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\457b24bb365487f19b919b9304bfe494\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.customview:customview:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\457b24bb365487f19b919b9304bfe494\customview-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a7f62cef6f2580716be1fbc0bf2d19f1\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a7f62cef6f2580716be1fbc0bf2d19f1\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.3.1] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\dd785f24378047182b1aacdcc6f28fd8\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.3.1] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\dd785f24378047182b1aacdcc6f28fd8\core-1.3.1\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\1653319b2d58e30ed9313b0c2df5947e\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\1653319b2d58e30ed9313b0c2df5947e\interpolator-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\25d8934de3004385e90543e0b354fff1\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\25d8934de3004385e90543e0b354fff1\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a89fd51e9582eccdee29149516da0a3b\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.documentfile:documentfile:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a89fd51e9582eccdee29149516da0a3b\documentfile-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\65ffefdcdf6ac37c61296df8feb5c9c7\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\65ffefdcdf6ac37c61296df8feb5c9c7\localbroadcastmanager-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\217472ccd08ea4a85c967983d0668f8b\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.print:print:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\217472ccd08ea4a85c967983d0668f8b\print-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\31fe7ec3156d932311e1d63e5afe3838\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\31fe7ec3156d932311e1d63e5afe3838\lifecycle-runtime-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a00281b5d84046061d87ced0c5ed5d6f\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.1.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a00281b5d84046061d87ced0c5ed5d6f\lifecycle-viewmodel-2.1.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\7526d421bacfef31921c7043f85ffde8\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.savedstate:savedstate:1.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\7526d421bacfef31921c7043f85ffde8\jetified-savedstate-1.0.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\13f6a8a8ac08da7eb6eca2e6990d51f4\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\13f6a8a8ac08da7eb6eca2e6990d51f4\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\be7a7dfb68705840901dbd39fdfd186a\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\be7a7dfb68705840901dbd39fdfd186a\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\43a209a1574b998fc4c3256029348641\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\43a209a1574b998fc4c3256029348641\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:7:5-9:41
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:7:5-9:41
+MERGED from [com.notch.visualiser:visualiser-android:1.2.20] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\42a50ce8e4b88080d1dd6c144264ac3a\jetified-visualiser-android-1.2.20\AndroidManifest.xml:7:5-9:41
+MERGED from [com.notch.visualiser:visualiser-android:1.2.20] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\42a50ce8e4b88080d1dd6c144264ac3a\jetified-visualiser-android-1.2.20\AndroidManifest.xml:7:5-9:41
+MERGED from [com.notch.database:database-android:1.0.37] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\cd2a353c0be78473c42e16dd33f9ea60\jetified-database-android-1.0.37\AndroidManifest.xml:7:5-9:41
+MERGED from [com.notch.database:database-android:1.0.37] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\cd2a353c0be78473c42e16dd33f9ea60\jetified-database-android-1.0.37\AndroidManifest.xml:7:5-9:41
+INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+	android:targetSdkVersion
+		INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+		INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+		ADDED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+		INJECTED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+IMPLIED from K:\My docs\Proposal\Multimodality Fall detection\Ravi\FallMeter-master_09242020\FallMeter_11022020\app\src\main\AndroidManifest.xml:2:1-69:12 reason: com.caretakermedical requested WRITE_EXTERNAL_STORAGE
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:15:5-80
+MERGED from [com.notch.sdk:sdk-android:1.1.355] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\0f2a9389cfe158c19eac457a89552f4a\jetified-sdk-android-1.1.355\AndroidManifest.xml:15:5-80
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:21:5-80
+MERGED from [com.notch.sdk:sdk-network-android:1.0.477] C:\Users\srezvanian\.gradle\caches\transforms-2\files-2.1\a04cb4792752673d4136a703de4fdd59\jetified-sdk-network-android-1.0.477\AndroidManifest.xml:21:5-80

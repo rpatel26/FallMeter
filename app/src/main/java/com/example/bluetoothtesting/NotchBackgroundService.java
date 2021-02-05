@@ -54,6 +54,8 @@ public class NotchBackgroundService extends Service {
     private static final String DEFAULT_USER_LICENSE = "Fam5ERAuAnQr18tR3Kpb";  // Extended License for Notch
     private static final long CALIBRATION_TIME = 7000L;
     private boolean captureFromAllSensor = true;    // Boolean to capture from all sensor vs 1 sensor
+    private int config_file_1_sensor = R.raw.config_1_chest;
+    private int config_file = R.raw.config_6_full_body;
 
     private CustomNotchService notchService;
     private ComponentName mNotchServiceComponent;
@@ -531,10 +533,11 @@ public class NotchBackgroundService extends Service {
             skeleton = Skeleton.from(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.skeleton_male), StandardCharsets.UTF_8));
             Workout workout;
             if(captureFromAllSensor){
-                workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_6_full_body))));
+
+                workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(config_file))));
             }
             else{
-                workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_1_chest))));
+                workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(config_file_1_sensor))));
             }
 
             workout = workout.withRealTime(true);           // Only for real-time
@@ -639,10 +642,10 @@ public class NotchBackgroundService extends Service {
             skeleton = Skeleton.from(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.skeleton_male), StandardCharsets.UTF_8));
             Workout workout;
             if(captureFromAllSensor){
-                workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_6_full_body))));
+                workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(config_file))));
             }
             else{
-                workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(R.raw.config_1_chest))));
+                workout = Workout.from("Demo_config", skeleton, IOUtil.readAll(new InputStreamReader(getApplicationContext().getResources().openRawResource(config_file_1_sensor))));
             }
 
             workout = workout.withRealTime(true);

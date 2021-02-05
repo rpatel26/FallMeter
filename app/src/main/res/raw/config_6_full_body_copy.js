@@ -8,6 +8,12 @@
             "frequency": 40
         },
         {
+            "name": "Neck",
+            "color1": "Pink",
+            "color2": "Pink",
+            "frequency": 40
+        },
+        {
             "name": "RightForeArm",
             "color1": "Yellow",
             "color2": "Yellow",
